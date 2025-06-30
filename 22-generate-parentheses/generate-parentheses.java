@@ -6,6 +6,7 @@ class Solution {
     }
     
     public void recurse(List<String> res, int left, int right, String s, int n) {
+	  //using if else to change the conditions  
         if (s.length() == n * 2) {
             res.add(s);
             return;
