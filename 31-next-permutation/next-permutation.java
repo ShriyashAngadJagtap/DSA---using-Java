@@ -24,7 +24,7 @@ class Solution {
             }
 
             swap(nums,ind1,ind2);
-           
+           //for the swapping section 
             reverse(nums,ind1+1);
         }
     }
