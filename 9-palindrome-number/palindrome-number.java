@@ -9,7 +9,7 @@ class Solution {
             if (s.charAt(i) != s.charAt(n-i-1)) return false;
         }
 
-        // if no flaws are found we return true
+       
         return true;
     }
 }
