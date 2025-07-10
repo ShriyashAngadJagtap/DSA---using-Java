@@ -7,7 +7,7 @@ class Solution {
      // Array to store free gaps between events, plus before the first and after the last event
         
         int[] gaps = new int[n + 1];
-
+     // Calculate gaps between consecutive events
         for (int i = 0; i < startTime.length; i++) {
             gaps[i] = startTime[i] - lastEnd;
             lastEnd = endTime[i];
