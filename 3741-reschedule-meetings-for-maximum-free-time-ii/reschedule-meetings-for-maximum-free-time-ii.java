@@ -4,7 +4,8 @@ class Solution {
         int n = startTime.length;
         int maxLeft = 0;
         int res = 0;
-
+     // Array to store free gaps between events, plus before the first and after the last event
+        
         int[] gaps = new int[n + 1];
 
         for (int i = 0; i < startTime.length; i++) {
