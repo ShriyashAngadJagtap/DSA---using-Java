@@ -26,7 +26,7 @@ class Solution {
 
             if (maxLeft >= dur || maxRight[i] >= dur)
                 res = Math.max(res, gaps[i - 1] + dur + gaps[i]);
-
+// Update maximum gap if this merged gap is larger
             res = Math.max(res, gaps[i - 1] + gaps[i]);
             maxLeft = Math.max(maxLeft, gaps[i - 1]);
         }
