@@ -4,6 +4,7 @@ BEGIN
     RETURN (
         -- Select unique salary values
         SELECT DISTINCT salary
+         -- From Employee table
         FROM Employee
         ORDER BY salary DESC
         LIMIT 1 OFFSET N
