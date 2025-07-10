@@ -6,6 +6,7 @@ BEGIN
         SELECT DISTINCT salary
          -- From Employee table
         FROM Employee
+        -- Order salaries in descending order (highest first)
         ORDER BY salary DESC
         LIMIT 1 OFFSET N
     );
