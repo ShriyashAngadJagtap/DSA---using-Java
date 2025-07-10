@@ -11,6 +11,7 @@ class Solution {
         for (int i = 0; i < startTime.length; i++) {
             // Free time before current event
             gaps[i] = startTime[i] - lastEnd;
+            // Update lastEnd for next iteration
             lastEnd = endTime[i];
         }
 
