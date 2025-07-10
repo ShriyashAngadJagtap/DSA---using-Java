@@ -16,7 +16,7 @@ class Solution {
         }
 // Add the final gap after the last event
         gaps[n] = eventTime - lastEnd;
-
+ // Try removing each event and merging its two adjacent gaps
         int[] maxRight = new int[n + 1];
         for (int i = n - 1; i >= 0; i--)
             maxRight[i] = Math.max(maxRight[i + 1], gaps[i + 1]);
