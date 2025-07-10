@@ -14,7 +14,7 @@ class Solution {
             // Update lastEnd for next iteration
             lastEnd = endTime[i];
         }
-
+// Add the final gap after the last event
         gaps[n] = eventTime - lastEnd;
 
         int[] maxRight = new int[n + 1];
