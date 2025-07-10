@@ -9,6 +9,7 @@ class Solution {
         int[] gaps = new int[n + 1];
      // Calculate gaps between consecutive events
         for (int i = 0; i < startTime.length; i++) {
+            // Free time before current event
             gaps[i] = startTime[i] - lastEnd;
             lastEnd = endTime[i];
         }
