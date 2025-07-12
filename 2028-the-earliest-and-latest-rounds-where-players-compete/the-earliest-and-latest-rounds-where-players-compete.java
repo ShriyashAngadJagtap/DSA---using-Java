@@ -17,7 +17,6 @@ public class Solution
         {
             return new int[]{2, 2};
         }
-
         int m = (n + 1) / 2;
         int minRound = Integer.MAX_VALUE;
         int maxRound = Integer.MIN_VALUE;
@@ -29,7 +28,6 @@ public class Solution
             p1 = n + 1 - p2;
             p2 = t;
         }
-
         //Simulate all possible outcomes
         if (p2 * 2 <= n + 1) 
         {
@@ -64,7 +62,6 @@ public class Solution
                 }
             }
         }
-
         // Return final earliest and latest round
         return new int[]{minRound, maxRound};
     }
